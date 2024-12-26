@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center a Div</title>
+    <style>
+        /* Method 1: Flexbox */
+        .flexbox-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            background-color: #f0f0f0;
+        }
+
+        .centered-div {
+            width: 200px;
+            height: 200px;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            line-height: 200px; /* Align text vertically */
+        }
+
+        /* Method 2: CSS Grid */
+        .grid-center {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Place at middle top */
+        .middle-top {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ae0046;
+            color:rgb(44, 44, 161);
+            padding: 10px 20px;
+            text-align: center;
+            height: 200px;
+            width: 600px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            font-weight: 300;
+            text-decoration: underline;
+            text-shadow: #4caf50;
+            text-transform: capitalize;
+        }
+        
+            .Hello {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 30px;
+                font-style: italic;
+                text-decoration:wavy;
+                padding-top: 10px;
+                
+            } 
+            .Tao {
+                position: absolute;
+           
+            background-color: #ae0046;
+            color:rgb(44, 44, 161);
+            padding: 10px 20px;
+            text-align: center;
+            height: 129px;
+            width: 1470px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            font-weight: 300;
+            top: 69px;
+            text-decoration: underline;
+            text-shadow: #4caf50;
+            text-transform: capitalize;
+              
+                
+
+            }
+            .Top56 {
+                position: absolute;
+           
+           background-color: #e3d1d8;
+           color:rgb(44, 44, 161);
+           padding: 10px 20px;
+           text-align: center;
+           height: 45px;
+           width: 1470px;
+           font-family:Georgia, 'Times New Roman', Times, serif;
+           font-size: 40px;
+           font-weight: 300;
+           top: 0px;
+           text-decoration: underline;
+           text-shadow: #4caf50;
+           text-transform: capitalize;
+            }
+        .Huy {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: wavy;
+    padding-top: 62px;
+    background-color: aliceblue;
+    height: 68px;
+    top: -57px;
+    position: relative;
+        }
+        .Huy2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 95px;
+    font-style: italic;
+    text-decoration: wavy;
+    padding-top: -15px;
+    background-color: rgb(229, 165, 165);
+    height: 108px;
+    top: -92px;
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    transform: translate(1%);
+    width: 1440px;
+         }
+
+       
+        .middle-part {
+            position: absolute;
+            right: 1220px;
+            background-color: #2f7e04;
+            color:rgb(44, 44, 161);
+            padding: 10px 20px;
+            text-align: center;
+            height: 1000px;
+            width: 250px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            font-weight: 300;
+            top: 225px;
+            text-decoration: underline;
+            text-shadow: #4caf50;
+            text-transform: capitalize;
+        }
+        .middle-part-inside {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 30px;
+                font-style: italic;
+                text-decoration:wavy;
+                padding-top: 10px;
+        }
+      
+        .tail {
+            position: relative;
+    top: 217px;
+    left: 1021px;
+    transform: translateX(68%);
+    background-color: #117b03;
+    color: rgb(44, 44, 161);
+    padding: 10px 20px;
+    text-align: center;
+    height: 1000px;
+    width: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-shadow: #4caf50;
+    text-transform: capitalize;
+}
+        
+
+        .tail-in {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 30px;
+                font-style: italic;
+                text-decoration:wavy;
+                padding-top: 10px;
+        }
+        
+        
+        .Bottom-center {
+            position: absolute;
+    top: 225px;
+    left: unset;
+    right: 5px;
+    transform: translateX(-32%);
+    background-color: #40059e;
+    color: rgb(44, 44, 161);
+    padding: 10px 20px;
+    height: 450px;
+    width: 875px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-decoration: none;
+    text-shadow: #4caf50;
+    text-transform: capitalize;
+        }
+        .Bottom-center-in {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+    padding-top: 10px;
+    top: 20px;
+    height: 282px;
+    background-color: aliceblue;
+    position: relative;
+    padding-left: 10px;
+    text-decoration: none;
+    font-style: oblique;
+}
+        
+       
+       
+
+        
+        .Down-center {
+            position: absolute;
+            top: 700px;
+            left: unset;
+            right: 5px;
+            transform: translateX(-32%);
+            background-color: #085d96;
+            color:rgb(44, 44, 161);
+            padding: 10px 20px;
+            text-align: center;
+            height: 524px;
+            width: 875px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            font-weight: 300;
+            text-decoration: underline;
+            text-shadow: #4caf50;
+            text-transform: capitalize;
+        }
+        .Down-center-in {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 30px;
+                font-style: italic;
+                text-decoration:wavy;
+                padding-top: 10px;
+        }
+        .Lye-out {
+            position: absolute;
+    top: 1256px;
+    left: -249px;
+    right: 120px;
+    transform: translateX(9.5%);
+    background-color: #04273e;
+    color: rgb(44, 44, 161);
+    padding: 10px 20px;
+    height: 59px;
+    width: 1600px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-shadow: #4caf50;
+    text-transform: capitalize;
+    text-align: center;
+    padding-left: 10px;
+        }
+        .Lye-in {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 30px;
+                font-style: italic;
+                text-decoration:wavy;
+                
+        }
+        .White {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgb(225, 103, 103);
+    padding-top: 22px;
+    top: 345px;
+    position: fixed;
+    height: 173px;
+    width: 889px;
+    padding-right: -1px;
+    padding-left: 19px;
+    transform: translateX(-1.85%);
+        
+        }
+        .Blue {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgba(17, 184, 17, 0.466);
+    padding-top: 18px;
+    top: 193px;
+    position: fixed;
+    height: 128px;
+    width: 889px;
+    padding-right: -1px;
+    padding-left: 19px;
+    transform: translateX(-1.85%);
+        }
+        .Black {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgba(243, 12, 216, 0.817);
+    padding-top: 18px;
+    top: 74px;
+    position: fixed;
+    height: 97px;
+    width: 889px;
+    padding-right: -1px;
+    padding-left: 19px;
+    transform: translateX(-1.85%);
+        }
+        .Lb1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgb(241, 241, 241);
+    padding-top: 18px;
+    top: 8px;
+    position: fixed;
+    height: 28px;
+    width: 788px;
+    padding-right: -1px;
+    padding-left: 19px;
+    transform: translateX(-1.85%);
+        }
+        .Lb2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgb(241, 241, 241);
+    padding-top: 35px;
+    top: 58px;
+    position: fixed;
+    height: 18px;
+    width: 788px;
+    padding-right: -1px;
+    padding-left: 19px;
+    transform: translateX(-1.85%);
+        }
+        .Lb3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgb(241, 241, 241);
+    padding-top: 35px;
+    top: 115px;
+    position: fixed;
+    height: 37px;
+    width: 788px;
+    padding-right: -1px;
+    padding-left: 19px;
+    transform: translateX(-1.85%);
+        }
+        .Lb4 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgb(241, 241, 241);
+    padding-top: 35px;
+    top: 58px;
+    position: fixed;
+    height: 41px;
+    width: 788px;
+    padding-right: -1px;
+    padding-left: 19px;
+    transform: translateX(-1.85%);
+        }
+        .Topic1 {
+            font-size: 10px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgb(241, 241, 241);
+    padding-top: 37px;
+    top: -54px;
+    position:relative;
+    height: 142px;
+    width: 89px;
+    padding-right: -18px;
+    padding-left: -59px;
+    transform: translateX(-1.85%);
+    right: -797px;
+        }
+         .Topic2 {
+        font-size: 10px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgb(241, 241, 241);
+    padding-top: 37px;
+    top: -50px;
+    position:relative;
+    height: 89px;
+    width: 89px;
+    padding-right: -18px;
+    padding-left: -59px;
+    transform: translateX(-1.85%);
+    right: -797px;
+    }
+         .Topic3 {
+        font-size: 10px;
+    font-style: italic;
+    text-decoration: wavy;
+    background-color: rgb(241, 241, 241);
+    padding-top: 37px;
+    top: -50px;
+    position:relative;
+    height: 66px;
+    width: 89px;
+    padding-right: -18px;
+    padding-left: -59px;
+    transform: translateX(-1.85%);
+    right: -797px;
+    }
+        .Bottas {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-size: 20px;
+    position: absolute;
+    top: 389px;
+    background-color: antiquewhite;
+    height: 69px;
+    width: 877px;
+        }
+        .Post {
+            background-color: rgb(53, 153, 0);
+    transform: translate(671px, 26px);
+    height: 40px;
+    position: relative;
+    top: -17px;
+    width: 190px;
+    padding-top: 10px;
+    font-size: 30px;
+
+        }
+        .Draft {
+            background-color: rgb(53, 153, 0);
+    transform: translate(447px, -24px);
+    height: 40px;
+    position: relative;
+    top: -17px;
+    width: 211px;
+    padding-top: 10px;
+    font-size: 30px;
+        }
+        .Cancel {
+            background-color: rgb(53, 153, 0);
+    transform: translate(219px, -74px);
+    height: 40px;
+    position: relative;
+    top: -17px;
+    width: 213px;
+    padding-top: 10px;
+    font-size: 30px;
+
+        }
+        .Rewrite {
+            background-color: rgb(53, 153, 0);
+    transform: translate(15px, -124px);
+    height: 40px;
+    position: relative;
+    top: -17px;
+    width: 189px;
+    padding-top: 10px;
+    font-size: 30px;
+
+        }
+        .End{
+            position: absolute;
+    left: -249px;
+    right: 120px;
+    top: 90px;
+    transform: translateX(15.5%);
+    background-color: #f0f0f0;
+    color: rgb(44, 44, 161);
+    padding: 19px 20px;
+    height: 10px;
+    width: 1600px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 300;
+    text-shadow: #4caf50;
+    text-transform: capitalize;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 7px;
+        }
+        
+    </style>
+</head>
+<body>  
+
+    <!-- Example 2: Using CSS Grid -->
+    <!-- Uncomment this section to test grid method -->
+    <!--
+    <div class="grid-center">
+        <div class="centered-div">Centered with Grid</div>
+    </div>
+    -->
+
+    <!-- Example 3: Middle Top Position -->
+
+     <div class="Tao"> Start menu
+        <div class="Huy">Here we will begin our journey
+            <div class="Huy2">BlogSite Mania</div>
+
+        </div>
+         </div>
+     <div class="Top56">TOPIE</div>
+     <div class="middle-part">This is the main part.
+            <div class="middle-part-inside">This is where the body begins</div>
+            </div>
+     <div class="tail">This is the last part
+            <div class="tail-in">This is where the body ends</div>
+        </div>
+     <div class="Bottom-center"> Write your blogs here...
+            <div class="Bottom-center-in">Write here</div>
+            <div class="Bottas">
+                <div class="Post">Post</div>
+                <div class="Draft">Save to Drafts</div>
+                <div class="Cancel">Cancel</div>
+                <div class="Rewrite">Rewrite</div>
+            </div>
+        </div>
+     <div class="Down-center"> Latest Blogs
+            <div class="Down-center-in"></div>
+            <div class="White"> White
+                <div class="Lb1">Blog 1</div>
+                <div class="Lb2">Blog 2</div>
+                <div class="Lb3">Blog 3</div>
+                <div class="Topic1">Topic1</div>
+            </div>
+
+            <div class="Blue">Blue
+                <div class="Lb1">Blog 1</div>
+                <div class="Lb4">Blog 2</div>
+                <div class="Topic2">Topic2</div>
+            </div>
+            <div class="Black">Black
+                <div class="Lb1">Blog 1</div>
+                <div class="Lb2">Blog 2</div>
+                <div class="Topic3">Topic3</div>
+            </div>
+
+        </div>
+     <div class="Lye-out"> This is the final Bottom tab 
+        <div class="Lye-in"> 
+     <div class="End">END</div>
+        </div>
+       </div>
+    
+
+       
+    </div>
+    </div>
+    
+</body>
+</html>
