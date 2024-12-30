@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .Trust {
+            width: 1545px;
+    height: 62px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    font-size: 40px;
+    background-color: darkorchid;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+        }
+        .Ease {
+            width: 1545px;
+    height: 62px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    font-size: 40px;
+    background-color: rgb(45, 14, 61);
+    top: 56px;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+        }
+        .Cozy {
+            width: 1545px;
+    height: 147px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    font-size: 110px;
+    background-color: rgb(72, 11, 50);
+    top: 115px;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+        }
+        .Create {
+            width: 235px;
+    height: 100px;
+    position: absolute;
+    transform: translate(661px, 207px);
+    background-color: royalblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 1300;
+    font-size: 59px;
+    text-decoration: underline;
+    text-align: center;
+        }
+        .Search {
+            width: 1255px;
+    height: 367px;
+    background-color: rgb(183, 90, 230);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    top: 266px;
+    left: 0px;
+    transform: translate(117px, 10px);
+        }
+        .SearchBar {
+            width: 1050px;
+    height: 78px;
+    background-color: rgb(45, 14, 61);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(10px, 10px);
+
+        }
+        .SearchSpace {
+            width: 1234px;
+    height: 256px;
+    background-color: rgb(45, 14, 61);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(10px, 95px);
+            
+        }
+        .Topic {
+            width: 169px;
+    height: 67px;
+    background-color: rgb(45, 14, 61);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(1075px, 10px);
+    text-align: center;
+    padding-top: 10px;
+        }
+        .Write {
+            width: 1259px;
+    height: 782px;
+    background-color: rgb(45, 14, 61);
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 58px;
+    text-decoration: underline;
+    text-align: center;
+    transform: translate(107px, 645px);
+}
+
+        
+        .Start {
+            
+            width: 1181px;
+    height: 574px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    transform: translate(34px, 25px);
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: saddlebrown;
+
+
+        }
+        .draft {
+            width: 289px;
+    height: 57px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 1200;
+    font-size: 38px;
+    background-color: slateblue;
+    transform: translate(138px, 33px);
+
+        }
+        .Send {
+            width: 289px;
+    height: 57px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 1200;
+    font-size: 41px;
+    background-color: slateblue;
+    transform: translate(739px, -24px);
+}
+.Bottas {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-size: 20px;
+    position: absolute;
+    top: 691px;
+    background-color: antiquewhite;
+    height: 69px;
+    width: 877px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: translate(216px, 10px);
+        }
+        .Post {
+            background-color: rgb(53, 153, 0);
+    transform: translate(671px, 26px);
+    height: 40px;
+    position: relative;
+    top: -17px;
+    width: 190px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+        .Draft {
+            background-color: rgb(53, 153, 0);
+    transform: translate(447px, -24px);
+    height: 40px;
+    position: relative;
+    top: -17px;
+    width: 211px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .Cancel {
+            background-color: rgb(53, 153, 0);
+    transform: translate(219px, -74px);
+    height: 40px;
+    position: relative;
+    top: -17px;
+    width: 213px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+        .Rewrite {
+            background-color: rgb(53, 153, 0);
+    transform: translate(15px, -124px);
+    height: 40px;
+    position: relative;
+    top: -17px;
+    width: 189px;
+    padding-top: 10px;
+    font-size: 30px;
+
+        }
+        .SearchBar2 {
+            width: 1142px;
+    height: 51px;
+    background-color: rgb(45, 14, 61);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(10px, 238px);
+
+        }
+        .SearchBar3 {
+            width: 1134px;
+    height: 146px;
+    background-color: rgb(45, 14, 61);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(10px, 377px);
+    padding: 10px 10px;
+        }
+        .SearchBar4 {
+            width: 1098px;
+    height: 88px;
+    background-color: rgb(138, 55, 179);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(0px);
+    padding: 10px 10px;
+        }
+        .SearchBar5 {
+            width: 929px;
+    height: 23px;
+    background-color: rgb(55, 86, 179);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(10px, 292px);
+
+        }
+        .SearchBar6 {
+            width: 929px;
+    height: 23px;
+    background-color: rgb(55, 86, 179);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(10px, 321px);
+
+        }
+        .SearchBar7 {
+            width: 1085px;
+    height: 23px;
+    background-color: rgb(55, 86, 179);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(0px, 29px);
+
+        }
+        .SearchBar8 {
+            width: 1085px;
+    height: 23px;
+    background-color: rgb(55, 86, 179);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    position: absolute;
+    transform: translate(0px);
+    
+        }
+        .Inter{
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 48px;
+    width: 280px;
+    transform: translate(9px, 20px);
+        }
+        .Nati {
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 50px;
+    width: 228px;
+    transform: translate(229px, 84px);
+        }
+        .Sport {
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 49px;
+    width: 220px;
+    transform: translate(305px, 19px);
+        }
+        .Life {
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 50px;
+    width: 199px;
+    transform: translate(10px, 84px);
+        }
+        .Enter{
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 47px;
+    width: 343px;
+    transform: translate(544px, 19px);
+        }
+        .Tech {
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 47px;
+    width: 244px;
+    transform: translate(905px, 19px);
+        }
+        .Trade {
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 49px;
+    width: 195px;
+    transform: translate(477px, 84px);
+        }
+        .Politics {
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 49px;
+    width: 234px;
+    transform: translate(692px, 84px);
+        }
+        .Weath {
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 49px;
+    width: 196px;
+    transform: translate(945px, 84px);
+        }
+        .More {
+            background-color: #efe9f8;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: underline;
+    height: 35px;
+    transform: translate(1165px, 90px);
+    width: 35px;
+    text-align: center;
+        }
+        .TopicBox {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    font-style: normal;
+    position: absolute;
+    background-color: burlywood;
+    top: 1431px;
+    width: 1259px;
+    text-align: justify;
+    height: 206px;
+    transform: translate(107px, 10px);
+    text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="Trust">TRUSTED BY 1000+ COMPANIES</div>
+    <div class="Ease">You can now write news</div>
+    <div class="Cozy">NewsXperia</div>
+    <!-- <div class="Create">CREATE</div> -->
+    <div class="Search">
+        <div class="SearchBar">Search here....</div>
+        <div class="SearchSpace"></div>
+        <div class="Topic">Topic</div>
+    </div>
+    <div class="Write">Writing pad for your News Article
+        <div class="Start">Start here
+            <div class="SearchBar2">Enter your Credentials </div>
+            <div class="SearchBar5">Enter your Credential links [LINK 1] </div>
+            <div class="SearchBar6">Enter your Credential links [LINK 2] </div>
+            <div class="SearchBar3">Enter your Proofs
+                <div class="SearchBar4">Enter here
+                    <div class="SearchBar7">Enter your Proof links [Link 2] </div>
+                    <div class="SearchBar8">Enter your Proof links [Link 2] </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="draft">Save to Draft</div>
+        <div class="Send">Publish</div> -->
+        <div class="Bottas">
+            <div class="Post">Post</div>
+            <div class="Draft">Save to Drafts</div>
+            <div class="Cancel">Cancel</div>
+            <div class="Rewrite">Rewrite</div>
+        </div>
+    </div>
+    <div class="TopicBox">Trending News Channels
+        <div class="Inter">CNBC</div>
+        <div class="Nati">The Hindu</div>
+        <div class="Sport">BBC News</div>
+        <div class="Life">Al Jazzeera</div>
+        <div class="Enter">New York Times</div>
+        <div class="Tech"> The TOI</div>
+        <div class="Trade">CNN</div>
+        <div class="Politics">ABP News</div>
+        <div class="Weath">Fox News</div>
+   
+        <div class="More">+</div>
+    </div>
+   
+</body>
+</html>
